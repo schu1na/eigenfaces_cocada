@@ -92,10 +92,4 @@ O trabalho foi dividido em **duas etapas principais**:
 * Matplotlib
 * scikit-learn
 
----
-
-## 📜 Licença
-
-Projeto acadêmico desenvolvido para fins de estudo.
-Código livre para uso e modificação com **atribuição de autoria**.
 
