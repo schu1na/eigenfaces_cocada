@@ -25,7 +25,6 @@ def plotar_grafico_variancia_acumulada(autovalores_percentuais):
     plt.title('Variância Acumulada dos Autovalores', fontsize=14)
     plt.legend()
     plt.grid(True, linestyle='--', alpha=0.6)
-    plt.xticks(x)  # Garante que apenas inteiros aparecem no eixo x
     plt.show()
 
 def procurar_num_componentes(percentual_desejado, autovalores_percentuais):
@@ -35,6 +34,45 @@ def procurar_num_componentes(percentual_desejado, autovalores_percentuais):
         soma_percentuais += autovalores_percentuais[num_componentes]
         num_componentes += 1
     return num_componentes
+
+# A desenvolver:
+# - Limiar de Similaridade
+# - Distâncias Intra e Inter
+
+# # Definindo o limiar de similaridade
+# ids = np.unique(targets)
+# distancias_intra = obter_distancias_intra(ids, projecoes, targets_treino)
+# distancias_inter = obter_distancias_inter(ids, projecoes, targets_treino)
+
+# media_intra = np.mean(distancias_intra)
+# dp_intra = np.std(distancias_intra)
+
+# media_inter = np.mean(distancias_inter)
+# dp_inter = np.std(distancias_inter)
+
+# limiar1 = media_intra + 2 * dp_intra    # limiar de similaridade baseado em desvio padrão
+
+
+# def obter_limiar_eer(distancias_intra, distancias_inter):
+#     # Cria-se vetores de labels (0 = intra-classe, 1 = inter-classe)
+#     labels = np.concatenate([
+#         np.zeros(len(distancias_intra)),  # 0 para intra-classe
+#         np.ones(len(distancias_inter))    # 1 para inter-classe
+#     ])
+
+#     # Concatenar todas as distâncias
+#     distancias = np.concatenate([distancias_intra, distancias_inter])
+
+#     # Calcular FPR e TPR (usando a função ROC do scikit-learn)
+#     fpr, tpr, limiares = roc_curve(labels, distancias)
+
+#     # Encontrar o limiar onde FPR ≈ 1 - TPR (FNR)
+#     limiar_eer = limiares[np.argmin(np.abs(fpr - (1 - tpr)))]
+    
+#     return limiar_eer
+
+# limiar_eer = obter_limiar_eer(distancias_intra, distancias_inter)
+# print(f"Limiar EER: {limiar_eer}")
 
 # def obter_distancias_intra(ids, projecoes, targets):
 #     distancias_intra = []
