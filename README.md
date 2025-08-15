@@ -1,9 +1,3 @@
-Perfeito 😄
-Vou criar um **README enriquecido** incluindo gráficos e imagens de exemplo extraídos do seu projeto, de forma que quem acessar o repositório veja de imediato como ele funciona e quais resultados você obteve.
-Como não temos as imagens salvas separadamente, vou colocar **links e instruções** para inserir as figuras geradas pelo notebook, mantendo o layout visual.
-
----
-
 # Eigenfaces para Reconhecimento Facial 🧑‍🤝‍🧑🎭
 
 Este projeto implementa **Análise de Componentes Principais (PCA)** para reconhecimento facial utilizando o dataset **Olivetti Faces** da biblioteca `scikit-learn`.
