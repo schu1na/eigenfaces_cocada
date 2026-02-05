@@ -1,4 +1,4 @@
-# Eigenfaces para Reconhecimento Facial 🧑‍🤝‍🧑🎭
+# Eigenfaces para Reconhecimento Facial
 
 Este projeto implementa **Análise de Componentes Principais (PCA)** para reconhecimento facial utilizando o dataset **Olivetti Faces** da biblioteca `scikit-learn`.
 Foi desenvolvido como **Trabalho Final** da disciplina **Computação Científica e Análise de Dados** na UFRJ.
